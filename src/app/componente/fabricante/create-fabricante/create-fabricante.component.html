@@ -1,0 +1,30 @@
+<div class="container">
+    <form id="form" class="center" [formGroup]="formulario" (ngSubmit)='onSubmit()'>
+    <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>nombre</mat-label>
+          <input matInput placeholder="digite su nombre" formControlName='nombre'>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>domicilio</mat-label>
+          <input matInput placeholder="digite su domicilio" formControlName='domicilio'>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label >Estado del fabricante</mat-label>
+            <mat-select formControlName='status'>
+              <mat-option value="Activido" formControlName='status'>Activido</mat-option >
+              <mat-option value="Desactivado" formControlName='status'>Desactivado</mat-option>
+            </mat-select>
+          </mat-form-field>
+      </p>
+      <button mat-button color="primary" type="Submit" [disabled]= "formulario.invalid">ENVIAR</button>
+    </form>
+</div>
