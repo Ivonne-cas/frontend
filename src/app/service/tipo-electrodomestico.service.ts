@@ -8,7 +8,7 @@ import { tipo_electrodomesticosI } from '../model/tipo_electrodomesticos';
 })
 export class TipoElectrodomesticoService {
   api_url = 'http://localhost:8000';
-  base_path = `${this.api_url}/tipo_electrodomesticos`
+  base_path = `${this.api_url}/Tipo_electrodomesticos`
   constructor(
     private http: HttpClient
   ) { }
