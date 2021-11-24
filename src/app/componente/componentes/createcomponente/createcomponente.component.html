@@ -1,1 +1,27 @@
-<p>createcomponente works!</p>
+<div class="container">
+    <form id="form" class="center" [formGroup]="formulario" (ngSubmit)='onSubmit()'>
+    <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Nombre</mat-label>
+          <input matInput placeholder="Digite nombre" formControlName='nombre'>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Especificacion</mat-label>
+          <input matInput placeholder="digite Especificacion" formControlName='especificacion'>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label >Precio</mat-label>
+            <input matInput placeholder="digite precio" formControlName='precio'>
+          </mat-form-field>
+      </p>
+      <button mat-button color="primary" type="Submit" [disabled]= "formulario.invalid">ENVIAR</button>
+    </form>
+</div>
