@@ -1,1 +1,19 @@
-<p>createaparato works!</p>
+<div class="container">
+    <form [formGroup]="formulario" novalidate (ngSubmit)="onSubmit()">
+        <div>
+           
+              <mat-form-field appearance="legacy">
+                <mat-label>Descripcion</mat-label>
+                <input matInput placeholder="Ingrese la descripción del aparato: " formControlName="descripcion">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+        </div>
+
+        <div>
+            <button mat-icon-button type="submit" [disabled]="formulario.invalid">
+                Enviar
+                <mat-icon>save</mat-icon>
+              </button>
+        </div>
+    </form>
+</div>
