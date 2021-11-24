@@ -21,6 +21,8 @@ import { ShowaparatoComponent } from './componente/aparato/showaparato/showapara
 import { CreateaparatoComponent } from './componente/aparato/createaparato/createaparato.component';
 import { CreatetipoElectrodomesticosComponent } from './componente/tipo_electrodomesticos/createtipo-electrodomesticos/createtipo-electrodomesticos.component';
 import { ShowtipoelectrodomesticosComponent } from './componente/tipo_electrodomesticos/showtipoelectrodomesticos/showtipoelectrodomesticos.component';
+import { ShowcomponenteComponent } from './componente/componentes/showcomponente/showcomponente.component';
+import { CreatecomponenteComponent } from './componente/componentes/createcomponente/createcomponente.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +33,8 @@ import { ShowtipoelectrodomesticosComponent } from './componente/tipo_electrodom
     CreateaparatoComponent,
     CreatetipoElectrodomesticosComponent,
     ShowtipoelectrodomesticosComponent,
+    ShowcomponenteComponent,
+    CreatecomponenteComponent,
   ],
   imports: [
     BrowserModule,
