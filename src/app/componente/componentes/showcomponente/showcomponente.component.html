@@ -1,1 +1,48 @@
-<p>showcomponente works!</p>
+<div class="container">
+    <div>
+      <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <a routerLink="/crearcomponentes">
+          <mat-icon>playlist_add</mat-icon>
+        </a>
+        
+      </button>
+      
+    </div>
+    <div>
+      <table mat-table [dataSource]="componentes" class="mat-elevation-z8">
+  
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef> ID </th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+        <!-- Name Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> Nombre </th>
+          <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+        </ng-container>
+        <!-- Weight Column -->
+        <ng-container matColumnDef="especificacion">
+          <th mat-header-cell *matHeaderCellDef> Especificacion </th>
+          <td mat-cell *matCellDef="let element"> {{element.especificacion}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="cantidad">
+          <th mat-header-cell *matHeaderCellDef> Cantidad </th>
+          <td mat-cell *matCellDef="let element"> {{element.cantidad}} </td>
+        </ng-container>
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="precio">
+            <th mat-header-cell *matHeaderCellDef> Precio</th>
+            <td mat-cell *matCellDef="let element"> {{element.precio}} </td>
+          </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
