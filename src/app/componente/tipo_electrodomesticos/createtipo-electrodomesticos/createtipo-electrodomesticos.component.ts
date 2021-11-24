@@ -34,7 +34,7 @@ export class CreatetipoElectrodomesticosComponent implements OnInit {
             duration: 5000
           }
         );
-        this.router.navigateByUrl('/fabricante')
+        this.router.navigateByUrl('/Tipo_electrodomesticos')
       },
       err => {
        this.snackBar.open(
