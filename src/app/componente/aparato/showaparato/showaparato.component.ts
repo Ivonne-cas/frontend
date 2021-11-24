@@ -9,9 +9,25 @@ import { Router } from '@angular/router';
 })
 export class ShowaparatoComponent implements OnInit {
 
-  constructor() { }
+  public aparato:aparatoI[]=[]
+  public displayedColumns: string[]=["id","descripcion","status"]
+  
+  constructor(
+    private aparatoservice: AparatoService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.mostrar()
+  }
+  mostrar() {
+    this.aparatoservice.getAparato()
+    .subscribe({
+      next:(data)=>{
+        this.aparato=data
+        console.log (data)
+      }
+    })
   }
 
 }

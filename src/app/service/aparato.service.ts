@@ -14,7 +14,7 @@ constructor(
     private http: HttpClient
   ) { }
 
-getAll():Observable<aparatoI[]>{
+getAparato():Observable<aparatoI[]>{
   return this.http.get<aparatoI[]>(this.base_path)
 }
 create(data:aparatoI): Observable<aparatoI>{
