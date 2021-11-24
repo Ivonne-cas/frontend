@@ -17,12 +17,20 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { ShowaparatoComponent } from './componente/aparato/showaparato/showaparato.component';
+import { CreateaparatoComponent } from './componente/aparato/createaparato/createaparato.component';
+import { CreatetipoElectrodomesticosComponent } from './componente/tipo_electrodomesticos/createtipo-electrodomesticos/createtipo-electrodomesticos.component';
+import { ShowtipoelectrodomesticosComponent } from './componente/tipo_electrodomesticos/showtipoelectrodomesticos/showtipoelectrodomesticos.component';
 @NgModule({
   declarations: [
     AppComponent,
     CreateFabricanteComponent,
     ShowFabricanteComponent,
-    NavComponent
+    NavComponent,
+    ShowaparatoComponent,
+    CreateaparatoComponent,
+    CreatetipoElectrodomesticosComponent,
+    ShowtipoelectrodomesticosComponent,
   ],
   imports: [
     BrowserModule,

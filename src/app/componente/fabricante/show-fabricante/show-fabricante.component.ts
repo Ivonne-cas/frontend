@@ -10,6 +10,7 @@ import { FabricanteService } from 'src/app/service/fabricante.service';
 export class ShowFabricanteComponent implements OnInit {
   public fabricante:fabricanteI[]=[]
   public displayedColumns: string[]=["id","nombre","domicilio","status"]
+  
   constructor(
     private fabricanteservice: FabricanteService,
     private router: Router

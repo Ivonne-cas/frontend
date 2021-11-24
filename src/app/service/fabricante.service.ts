@@ -13,7 +13,7 @@ export class FabricanteService {
   ) {   
   }
   getFabricante():Observable<fabricanteI[]>{
-    return this,this.http.get <fabricanteI[]>(this.base_path)
+    return this.http.get <fabricanteI[]>(this.base_path)
   }
   create(data: fabricanteI ): Observable<fabricanteI>{
     return this.http.post<fabricanteI>(this.base_path, data)
