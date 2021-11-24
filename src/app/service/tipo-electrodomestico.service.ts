@@ -12,7 +12,7 @@ export class TipoElectrodomesticoService {
   constructor(
     private http: HttpClient
   ) { }
-  getAll():Observable<tipo_electrodomesticosI[]>{
+  getTipoElectrodomesticos():Observable<tipo_electrodomesticosI[]>{
     return this.http.get<tipo_electrodomesticosI[]>(this.base_path)
   }
   create(data:tipo_electrodomesticosI): Observable<tipo_electrodomesticosI>{
