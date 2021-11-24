@@ -13,8 +13,7 @@ import { tipo_electrodomesticosI } from 'src/app/model/tipo_electrodomesticos';
 export class CreatetipoElectrodomesticosComponent implements OnInit {
   public formulario : FormGroup = this.formBuilder.group({
     nombre: ['',Validators.required],
-    caracteristicas: ['',Validators.required],
-    status: ['',Validators.required]
+    caracteristicas: ['',Validators.required]
   })
   constructor(
     private tipo_electrodomesticoservice: TipoElectrodomesticoService,
