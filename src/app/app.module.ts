@@ -23,6 +23,7 @@ import { CreatetipoElectrodomesticosComponent } from './componente/tipo_electrod
 import { ShowtipoelectrodomesticosComponent } from './componente/tipo_electrodomesticos/showtipoelectrodomesticos/showtipoelectrodomesticos.component';
 import { ShowcomponenteComponent } from './componente/componentes/showcomponente/showcomponente.component';
 import { CreatecomponenteComponent } from './componente/componentes/createcomponente/createcomponente.component';
+import { ComponenteService } from './service/componente.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +55,8 @@ import { CreatecomponenteComponent } from './componente/componentes/createcompon
     
   ],
   providers: [
-    FabricanteService
+    FabricanteService,
+    ComponenteService
   ],
   bootstrap: [AppComponent]
 })

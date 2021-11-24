@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateaparatoComponent } from './componente/aparato/createaparato/createaparato.component';
 import { ShowaparatoComponent } from './componente/aparato/showaparato/showaparato.component';
+import { CreatecomponenteComponent } from './componente/componentes/createcomponente/createcomponente.component';
 import { ShowcomponenteComponent } from './componente/componentes/showcomponente/showcomponente.component';
 import { CreateFabricanteComponent } from './componente/fabricante/create-fabricante/create-fabricante.component';
 import { ShowFabricanteComponent } from './componente/fabricante/show-fabricante/show-fabricante.component';
@@ -37,6 +38,11 @@ const routes: Routes = [
   {
     path: "componentes",
     component:ShowcomponenteComponent
+  },
+
+  {
+    path: "crearcomponentes",
+    component: CreatecomponenteComponent
   }
 ];
 
